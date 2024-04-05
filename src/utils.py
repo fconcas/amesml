@@ -93,6 +93,10 @@ def load_ames_data() -> pd.DataFrame:
     -------
         Pandas dataframe containing the data.
     """
+    # Create data directory if it doesn't exist
+    if not DATA_DIR.is_dir():
+        DATA_DIR.mkdir()
+
     if not DATA_PATH.is_file():
         print("Data not found. Downloading it...")
         urllib.request.urlretrieve(DATA_URL, DATA_PATH)
