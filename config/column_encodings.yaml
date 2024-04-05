@@ -1,0 +1,95 @@
+---
+"Exter Qual": &qual_dict
+  "Ex": 5.0
+  "Gd": 4.0
+  "TA": 3.0
+  "Fa": 2.0
+  "Po": 1.0
+  NA: 0.0
+"Exter Cond": *qual_dict
+"Bsmt Qual": *qual_dict
+"Bsmt Cond": *qual_dict
+"Heating QC": *qual_dict
+"Kitchen Qual": *qual_dict
+"Fireplace Qu": *qual_dict
+"Garage Qual": *qual_dict
+"Garage Cond": *qual_dict
+"Pool QC": *qual_dict
+
+"Bsmt Exposure":
+  "Gd": 4.0
+  "Av": 3.0
+  "Mn": 2.0
+  "Po": 1.0
+  NA: 0.0
+
+"BsmtFin Type 1": &bsmt_fin_dict
+  "GLQ": 6.0
+  "ALQ": 5.0
+  "BLQ": 4.0
+  "Rec": 3.0
+  "LwQ": 2.0
+  "Unf": 1.0
+  NA: 0.0
+"BsmtFin Type 2": *bsmt_fin_dict
+
+"Lot Shape":
+  "Reg": 4.0
+  "IR1": 3.0
+  "IR2": 2.0
+  "IR3": 1.0
+  NA: 0.0
+
+"Utilities":
+  "AllPub": 4.0
+  "NoSewr": 3.0
+  "NoSeWa": 2.0
+  "ELO": 1.0
+  NA: 0.0
+
+"Land Slope":
+  "Gtl": 3.0
+  "Mod": 2.0
+  "Sev": 1.0
+  NA: 0.0
+
+"Garage Finish":
+  "Fin": 3.0
+  "RFn": 2.0
+  "Unf": 1.0
+  NA: 0.0
+
+Paved Drive:
+  "Y": 3.0
+  "P": 2.0
+  "N": 1.0
+  NA: 0.0
+
+"Fence":
+  "GdPrv": 4.0
+  "MnPrv": 3.0
+  "GdWo": 2.0
+  "MnWw": 1.0
+  NA: 0.0
+
+"Electrical":
+  "SBrkr": 5.0
+  "FuseA": 4.0
+  "FuseF": 3.0
+  "FuseP": 2.0
+  "Mix": 1.0
+  NA: 0.0
+
+"Functional":
+  "Typ": 7.0
+  "Min1": 6.0
+  "Min2": 5.0
+  "Mod": 4.0
+  "Maj1": 3.0
+  "Maj2": 2.0
+  "Sev": 1.0
+  "Sal": 0.0
+
+"Central Air":
+  "Y": 1.0
+  "N": 0.0

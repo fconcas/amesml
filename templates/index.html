@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ames Housing Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bulma.css') }}" />
+    <script src="{{ url_for('static', filename='jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+
+<body class="font-mono">
+    <section class="section">
+        <h1 class="title is-3 has-text-centered">
+            Ames Housing Price Predictor
+        </h1>
+        <h2 class="subtitle is-6 has-text-centered">
+            Fill the data and click on the "Predict Price" button at the bottom of the page when ready. All fields are
+            optional.
+        </h2>
+        <form class="box" id="review-form" method="post">
+            {% for group, cols in gui_cols.items() %}
+            <h2 class="title is-4">
+                {{ group }}
+            </h2>
+            <div class="grid">
+                {% for col, vals in cols.items() %}
+                {% if vals is iterable %}
+                <div class="cell">
+                    <div class="field is-small">
+                        <label class="label is-small">{{ namings[col] }}</label>
+                        <div class="select is-small is-fullwidth">
+                            <select class="dropdown is-small" id="{{ col }}" name="{{ col }}">
+                                <option value="" selected></option>
+                                {% for val in vals %}
+                                <option value="{{ val }}">{{ namings[val] }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="cell">
+                    <div class="field is-small">
+                        <label class="label is-small">{{ namings[col] }}</label>
+                        <div class="control is-small">
+                            <input class="input is-small" type="text" id="{{ col }}" name="{{ col }}" />
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endfor %}
+            <div class="field has-addons has-addons-centered">
+                <p class="control">
+                    <input class="input" type="text" id="prediction" value="" readonly />
+                </p>
+                <p class="control">
+                    <button class="button" id="submit">Predict Price</button>
+                </p>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

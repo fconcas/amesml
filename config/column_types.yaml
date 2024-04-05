@@ -1,0 +1,392 @@
+"Lot Frontage": 'numerical'
+"Lot Area": 'numerical'
+"Overall Qual": 'numerical'
+"Overall Cond": 'numerical'
+"Year Built": 'numerical'
+"Year Remod/Add": 'numerical'
+"Mas Vnr Area": 'numerical'
+"BsmtFin SF 1": 'numerical'
+"BsmtFin SF 2": 'numerical'
+"Bsmt Unf SF": 'numerical'
+"Total Bsmt SF": 'numerical'
+"1st Flr SF": 'numerical'
+"2nd Flr SF": 'numerical'
+"Low Qual Fin SF": 'numerical'
+"Gr Liv Area": 'numerical'
+"Bsmt Full Bath": 'numerical'
+"Bsmt Half Bath": 'numerical'
+"Full Bath": 'numerical'
+"Half Bath": 'numerical'
+"Bedroom AbvGr": 'numerical'
+"Kitchen AbvGr": 'numerical'
+"TotRms AbvGrd": 'numerical'
+"Fireplaces": 'numerical'
+"Garage Yr Blt": 'numerical'
+"Garage Cars": 'numerical'
+"Garage Area": 'numerical'
+"Wood Deck SF": 'numerical'
+"Open Porch SF": 'numerical'
+"Enclosed Porch": 'numerical'
+"3Ssn Porch": 'numerical'
+"Screen Porch": 'numerical'
+"Pool Area": 'numerical'
+"Misc Val": 'numerical'
+"Mo Sold": 'numerical'
+"Yr Sold": 'numerical'
+"SalePrice": 'numerical'
+
+"MS SubClass":
+  "categories":
+    - '020'
+    - '030'
+    - '040'
+    - '045'
+    - '050'
+    - '060'
+    - '070'
+    - '075'
+    - '080'
+    - '085'
+    - '090'
+    - '120'
+    - '150'
+    - '160'
+    - '180'
+    - '190'
+  
+"MS Zoning":
+  "categories":
+    - 'A (agr)'
+    - 'C (all)'
+    - 'FV'
+    - 'I (all)'
+    - 'RH'
+    - 'RL'
+    - 'RM'
+
+"Street": &str_cat
+  "categories":
+    - 'Grvl'
+    - 'Pave'
+
+"Alley": *str_cat
+
+"Lot Shape":
+  "categories":
+    - 'Reg'
+    - 'IR1'
+    - 'IR2'
+    - 'IR3'
+  "ordered": True
+
+"Land Contour":
+  "categories":
+    - 'Lvl'
+    - 'Bnk'
+    - 'HLS'
+    - 'Low'
+
+"Utilities":
+  "categories":
+    - 'AllPub'
+    - 'NoSewr'
+    - 'NoSeWa'
+    - 'ELO'
+  "ordered": True
+
+"Lot Config":
+  "categories":
+    - 'Inside'
+    - 'Corner'
+    - 'CulDSac'
+    - 'FR2'
+    - 'FR3'
+
+"Land Slope":
+  "categories":
+    - 'Gtl'
+    - 'Mod'
+    - 'Sev'
+  "ordered": True
+
+"Neighborhood":
+  "categories":
+    - 'Blmngtn'
+    - 'Blueste'
+    - 'BrDale'
+    - 'BrkSide'
+    - 'ClearCr'
+    - 'CollgCr'
+    - 'Crawfor'
+    - 'Edwards'
+    - 'Gilbert'
+    - 'Greens'
+    - 'GrnHill'
+    - 'IDOTRR'
+    - 'Landmrk'
+    - 'MeadowV'
+    - 'Mitchel'
+    - 'NAmes'
+    - 'NPkVill'
+    - 'NWAmes'
+    - 'NoRidge'
+    - 'NridgHt'
+    - 'OldTown'
+    - 'SWISU'
+    - 'Sawyer'
+    - 'SawyerW'
+    - 'Somerst'
+    - 'StoneBr'
+    - 'Timber'
+    - 'Veenker'
+
+"Condition 1": &cond_cat
+  "categories":
+    - 'Artery'
+    - 'Feedr'
+    - 'Norm'
+    - 'RRNn'
+    - 'RRAn'
+    - 'PosN'
+    - 'PosA'
+    - 'RRNe'
+    - 'RRAe'
+
+"Condition 2": *cond_cat
+Bldg Type:
+  "categories":
+    - '1Fam'
+    - '2fmCon'
+    - 'Duplex'
+    - 'Twnhs'
+    - 'TwnhsE'
+
+"House Style":
+  "categories":
+    - '1Story'
+    - '1.5Fin'
+    - '1.5Unf'
+    - '2Story'
+    - '2.5Fin'
+    - '2.5Unf'
+    - 'SFoyer'
+    - 'SLvl'
+
+"Roof Style":
+  "categories":
+    - 'Flat'
+    - 'Gable'
+    - 'Gambrel'
+    - 'Hip'
+    - 'Mansard'
+    - 'Shed'
+
+"Roof Matl":
+  "categories":
+    - 'ClyTile'
+    - 'CompShg'
+    - 'Membran'
+    - 'Metal'
+    - 'Roll'
+    - 'Tar&Grv'
+    - 'WdShake'
+    - 'WdShngl'
+
+"Exterior 1st":
+  "categories":
+    - 'AsbShng'
+    - 'AsphShn'
+    - 'BrkComm'
+    - 'BrkFace'
+    - 'CBlock'
+    - 'CemntBd'
+    - 'HdBoard'
+    - 'ImStucc'
+    - 'MetalSd'
+    - 'Other'
+    - 'Plywood'
+    - 'PreCast'
+    - 'Stone'
+    - 'Stucco'
+    - 'VinylSd'
+    - 'Wd Sdng'
+    - 'WdShing'
+
+"Exterior 2nd":
+  "categories":
+    - 'AsbShng'
+    - 'AsphShn'
+    - 'Brk Cmn'
+    - 'BrkFace'
+    - 'CBlock'
+    - 'CmentBd'
+    - 'HdBoard'
+    - 'ImStucc'
+    - 'MetalSd'
+    - 'Other'
+    - 'Plywood'
+    - 'PreCast'
+    - 'Stone'
+    - 'Stucco'
+    - 'VinylSd'
+    - 'Wd Sdng'
+    - 'Wd Shng'
+
+"Mas Vnr Type":
+  "categories":
+    - 'BrkCmn'
+    - 'BrkFace'
+    - 'CBlock'
+    - 'Stone'
+
+"Exter Qual": &qual_cat
+  "categories":
+    - 'Po'
+    - 'Fa'
+    - 'TA'
+    - 'Gd'
+    - 'Ex'
+  "ordered": True
+
+"Exter Cond": *qual_cat
+
+"Foundation":
+  "categories":
+    - 'BrkTil'
+    - 'CBlock'
+    - 'PConc'
+    - 'Slab'
+    - 'Stone'
+    - 'Wood'
+
+"Bsmt Qual": *qual_cat
+
+"Bsmt Cond": *qual_cat
+
+"Bsmt Exposure":
+  "categories":
+    - 'No'
+    - 'Mn'
+    - 'Av'
+    - 'Gd'
+  "ordered": True
+
+"BsmtFin Type 1": &bsmt_fin_cat
+  "categories":
+    - 'Unf'
+    - 'LwQ'
+    - 'Rec'
+    - 'BLQ'
+    - 'ALQ'
+    - 'GLQ'
+  "ordered": True
+
+"BsmtFin Type 2": *bsmt_fin_cat
+
+"Heating":
+  "categories":
+    - 'Floor'
+    - 'GasA'
+    - 'GasW'
+    - 'Grav'
+    - 'OthW'
+    - 'Wall'
+
+"Heating QC": *qual_cat
+
+"Central Air":
+  "categories":
+    - 'N'
+    - 'Y'
+
+"Electrical":
+  "categories":
+    - 'Mix'
+    - 'FuseP'
+    - 'FuseF'
+    - 'FuseA'
+    - 'SBrkr'
+  "ordered": True
+
+"Kitchen Qual": *qual_cat
+
+"Functional":
+  "categories":
+    - 'Sal'
+    - 'Sev'
+    - 'Maj2'
+    - 'Maj1'
+    - 'Mod'
+    - 'Min2'
+    - 'Min1'
+    - 'Typ'
+  "ordered": True
+
+"Fireplace Qu": *qual_cat
+
+"Garage Type":
+  "categories":
+    - '2Types'
+    - 'Attchd'
+    - 'Basment'
+    - 'BuiltIn'
+    - 'CarPort'
+    - 'Detchd'
+
+"Garage Finish":
+  "categories":
+    - 'Fin'
+    - 'RFn'
+    - 'Unf'
+  "ordered": True
+
+"Garage Qual": *qual_cat
+
+"Garage Cond": *qual_cat
+
+"Paved Drive":
+  "categories":
+    - 'N'
+    - 'P'
+    - 'Y'
+  "ordered": True
+
+"Pool QC": *qual_cat
+
+"Fence":
+  "categories":
+    - 'MnWw'
+    - 'GdWo'
+    - 'MnPrv'
+    - 'GdPrv'
+  "ordered": True
+
+"Misc Feature":
+  "categories":
+    - 'Elev'
+    - 'Gar2'
+    - 'Othr'
+    - 'Shed'
+    - 'TenC'
+
+"Sale Type":
+  "categories":
+    - 'WD '
+    - 'CWD'
+    - 'VWD'
+    - 'New'
+    - 'COD'
+    - 'Con'
+    - 'ConLw'
+    - 'ConLI'
+    - 'ConLD'
+    - 'Oth'
+
+"Sale Condition":
+  "categories":
+    - 'Normal'
+    - 'Abnorml'
+    - 'AdjLand'
+    - 'Alloca'
+    - 'Family'
+    - 'Partial'

@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+docker-compose.yml
+Dockerfile
+.docker
+.dockerignore
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__
+**/*.py[cod]
+**/*$py.class
+
+# Pytest
+.pytest_cache
+
+# VSCode
+.vscode
+
+# Jupyter
+notebooks/
+
+# Distribution / packaging
+data/
+references/
+tests/
+LICENSE
+README.md
+requirements-notebooks.txt
+train_model.py
