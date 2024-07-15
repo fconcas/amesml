@@ -29,7 +29,7 @@ You have three different options to run this software: using your local environm
 
 ### Configuring the local environment
 
-Download and install [Python](https://www.python.org/) if not already installed. I recommend the version 3.11 (latest revision). Then open a terminal window, navigate to this project directory, and run the command:
+Download and install [Python](https://www.python.org/) if not already installed. I recommend the version 3.12 (latest revision). Then open a terminal window, navigate to this project directory, and run the command:
 
 ```console
 pip install -r requirements.txt
@@ -52,7 +52,7 @@ Download and install Conda if not already present in your system. I recommend [M
 Open the Anaconda prompt and create a new environment (in this example we call it `amesml`, but you can name it however you like):
 
 ```console
-conda create -n amesml python=3.11
+conda create -n amesml python=3.12
 ```
 
 Answer `y` when prompted for confirmation. After completing the creation, activate the newly created environment:
